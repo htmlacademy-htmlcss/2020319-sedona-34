@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alisa Berzina](https://up.htmlacademy.ru/htmlcss/34/user/2020319).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Максим Боровик](https://htmlacademy.ru/profile/mouxez).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
