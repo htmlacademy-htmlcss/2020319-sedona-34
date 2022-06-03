@@ -94,7 +94,7 @@ body {
 
 .advantages-photo {
   background-image: url("images/background/photo1.jpg");
-    background-size: 100% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
@@ -267,13 +267,13 @@ body {
     line-height: 21px;
   }
 
-.product-card-button {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  background: #82B3D3;
-  text-decoration: none;
+  .product-card-button {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #82B3D3;
+    text-decoration: none;
 }
