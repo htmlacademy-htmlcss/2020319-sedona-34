@@ -66,9 +66,10 @@ body {
 
 .navigation-user {
   display: flex;
-  max-width: 265px;
-  margin-right: 0 auto;
-  margin-left: 300px;
+  max-width: 90px;
+  margin-right: auto;
+  margin-right: 20px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -81,6 +82,32 @@ body {
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: capitalize; 
+}
+
+.navigation-item-button {
+  background: #756157;
+  border-radius: 4px;
+  margin-right: 70px;
+  margin-left: 0 auto;
+  width: 160px;
+  height: 37px;
+}
+
+.navigation-button-destination {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  height: 37px;
+  background: #756157;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .main-container {
@@ -129,11 +156,12 @@ body {
   padding: 0; 
 }
 
-.advantages-item-first {
+.advantages-item-town {
   display: flex;
   flex-direction: column;
   width: 400px;
   height: 384px;
+  margin: 0;
   background-color: #82B3D3;
 }
 
@@ -154,7 +182,7 @@ body {
   color: #FFFFFF;
 }
 
-.advantages-number-first {
+.advantages-number-town {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -162,12 +190,12 @@ body {
   line-height: 21px;
   margin-right: 85px;
   margin-left: 85px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
   color: #FFFFFF;
 } 
 
-.advantages-text-first {
+.advantages-text-town {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -175,20 +203,21 @@ body {
   line-height: 21px;
   margin-right: 85px;
   margin-left: 85px;
-  margin-top: 30px;
+  margin-top: auto;
   margin-bottom: 92px;
   color: #FFFFFF;
 }
 
-.advantages-photo {
+.advantages-town-photo {
   background-image: url("images/background/photo1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 800px;
   height: 384px;
+  margin: 0;
 }
 
-.advantages-item-second {
+.advantages-item-house {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -196,10 +225,11 @@ body {
   line-height: 21px;
   height: 384px;
   width: 400px;
+  margin: 0;
   background:rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-third {
+.advantages-item-food {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -207,10 +237,11 @@ body {
   line-height: 21px;
   height: 384px;
   width: 400px;
+  margin: 0;
   background: #FFFFFF;
 }
 
-.advantages-item-fourth {
+.advantages-item-souvenirs {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -218,6 +249,7 @@ body {
   line-height: 21px;
   height: 384px;
   width: 400px;
+  margin: 0;
   background: #FFFFFF;
   background: rgba(131, 179, 211, 0.12);
 }
@@ -239,51 +271,152 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
   color: #333333;
 }
 
-.advantages-description {
-  font-family: "PT Sans";
+.advantages-description-bridge {
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  color: #FFFFFF;
 }
 
-.advantages-icon {
-  margin-top: 80px;
+.advantages-icon-house {
+  width: 72px;
+  height: 72px;
+  margin-top: 81px;
 }
 
-.search-title {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #333333;
-  }
+.advantages-icon-food {
+  width: 74px;
+  height: 70px;
+  margin-top: 81px;
+}
 
-.search-description {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #333333;
-  }
+.advantages-icon-souvenirs {
+  width: 64px;
+  height: 76px;
+  margin-top: 78px;
+}
 
-.button-all {
+.advantages-photo-bridge {
+  width: 800px;
+  height: 384px;
+}
+
+.advantages-item-bridge {
+  width: 400px;
+  height: 384px;
+  background: #82B3D3;
+}
+
+.advantages-title-bridge {
   font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 92px;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.advantages-item-square {
+  width: 400px;
+  height: 384px;
+  margin: 0;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title-icons-bottom {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 103px;
+  margin-right: 85px;
+  margin-left: 85px;
+}
+
+.advantages-item-road {
+  width: 400px;
+  height: 384px;
+  margin: 0;
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-tourists {
+  width: 400px;
+  height: 384px;
+  margin: 0;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.search {
+  width: 1200px;
+  height: 417px;
+  margin: 0;
+}
+
+.search-title-interest {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 91px;
+  margin-bottom: 29px;
+}
+
+.search-description-interest {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 68px;
+}
+
+.search-button {
+  width: 574px;
+  height: 60px;
+  margin-top: auto;
+  margin-right: 313px;
+  margin-left: 313px;
+  margin-bottom: 93px;
+  background: #756157;
+  border-radius: 4px;
+}
+
+.search-button-name {
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-decoration: none;
+  width: 544px;
+  height: 36px;
 }
 
 .subscription {
@@ -327,6 +460,9 @@ body {
 .page-footer {
   color:#000000;
   background-color: #ffffff;
+  width: 1200px;
+  height: 120px;
+  margin: 0;
 }
 
 .footer-phone-number {
@@ -337,8 +473,11 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 45px;
+  margin-bottom: 35px;
 }
-
 
 .page-footer-container {
   display: flex;
@@ -392,7 +531,7 @@ body {
     color: #FFFFFF;
     background-color: #000000;
     background-image: url("../images/background/catalogBackground.jpg");
-    width: 1199.53px;
+    width: 2200px;
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
