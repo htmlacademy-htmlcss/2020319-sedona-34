@@ -65,10 +65,9 @@ body {
 }
 
 .navigation-user {
-  display: flex;
-  max-width: 90px;
-  margin-right: auto;
-  margin-right: 20px;
+  width: 270px;
+  padding: 0;
+  margin-right: 0;
   margin-left: auto;
 }
 
@@ -122,8 +121,8 @@ body {
   display: block;
   width: 139px;
   height: 70px;
-  left: 70px;
-  top: 0px;
+  margin-left: 70px;
+  margin-right: 47px;
 }
 
 .main-index {
@@ -365,7 +364,7 @@ body {
 .search {
   width: 1200px;
   height: 417px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .search-title-interest {
@@ -395,10 +394,8 @@ body {
 .search-button {
   width: 574px;
   height: 60px;
-  margin-top: auto;
   margin-right: 313px;
   margin-left: 313px;
-  margin-bottom: 93px;
   background: #756157;
   border-radius: 4px;
 }
@@ -414,8 +411,6 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
-  width: 544px;
-  height: 36px;
 }
 
 .subscription {
@@ -435,6 +430,10 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding-top: 94px;
+  padding-left: 398px;
+  padding-right: 398px;
+  padding-bottom: 29px;
 }
 
 .subscription-description {
@@ -443,6 +442,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin-top: 29px;
 }
 
 .button-subscription {
@@ -456,12 +456,16 @@ body {
   color: #FFFFFF;
 }
 
-.page-footer {
-  color:#000000;
-  background-color: #ffffff;
+.page-footer-container {
+  display: flex;
   width: 1200px;
-  height: 120px;
-  margin: 0;
+  margin: 0 auto;
+}
+
+.footer-socials {
+  max-width: 142px;
+  align-items: center;
+  padding: 0px;
 }
 
 .footer-phone-number {
@@ -472,41 +476,18 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 45px;
-  margin-bottom: 35px;
-}
-
-.page-footer-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-socials {
-  display: flex;
-  flex-direction: row;
-  margin-left: 0;
-  margin-right: auto;
-  max-width: 142px;
-  align-items: center;
-  padding: 0px;
 }
 
 .footer-phone {
-  display: flex;
   text-align: center;
-  margin-left: 450px;
-  margin-right: 421px;
+  margin: 0 auto;
   max-width: 331px;
 }
 
 .footer-company {
-  display: flex;
-  text-align: center;
-  margin-left: auto;
-  margin-right: 0;
+  margin-top: 49px;
+  margin-bottom: 38px;
+  margin-right: 70px;
   max-width: 115px;
 }
   /* CSS Каталога */
@@ -526,11 +507,51 @@ body {
     text-transform: capitalize; 
   }
 
+  .catalog-products {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .inner-header-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    margin-left: 70px;
+    margin-top: 35px;
+    margin-bottom: auto;
+  }
+
+  .breadcrumbs {
+    margin-top: 10px;
+    margin-left: 75px;
+  }
+
+  .hotel-filter-group {
+    width: 151px;
+    margin-left: 70px;
+  }
+
+  .product-list-Amara {
+    width: 340px;
+    height: 438px;
+    margin-left: 70px;
+  }
+
+  .product-list-GreenTree {
+    width: 340px;
+    height: 438px;
+    margin-left: 70px;
+  }
+
   .main-inner {
     color: #FFFFFF;
     background-color: #000000;
     background-image: url("../images/background/catalogBackground.jpg");
-    width: 2200px;
+    width: 1200px;
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
@@ -538,6 +559,24 @@ body {
   .hotels-found {
     background: #FFFFFF;
     color: #000000;
+  }
+
+  .hotel-filter-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+  }
+
+  .hotel-type-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
   }
 
   .hotels-found-title {
@@ -548,14 +587,18 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
+    margin-top: 58px;
+    margin-left: 72px;
   }
 
   .product-card-title {
     font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    color: #000000;
+  }
+
+  .product-card-link {
     text-decoration: none;
   }
 
@@ -584,4 +627,34 @@ body {
   color: #FFFFFF;
   background: #82B3D3;
   text-decoration: none;
+}
+
+.subscription-catalog {
+  height: 411px;
+  width: 1200px;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+.subscription-catalog-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 94px;
+  padding-right: 398px;
+  padding-left: 398px;
+}
+
+.subscription-catalog-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
