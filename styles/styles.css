@@ -86,6 +86,8 @@ body {
 
 .navigation-list .navigation-user {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   min-width: 42px;
@@ -131,19 +133,22 @@ body {
 .navigation-item-button {
   background: #756157;
   border-radius: 4px;
-  margin-right: 70px;
+  margin-left: 18px;
+  margin-top: 14px;
+  margin-right: auto;
   width: 160px;
   height: 37px;
 }
 
 .navigation-button-destination {
+  display: block;
+  text-align: center;
+  padding: 8px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  width: 160px;
-  height: 37px;
   background: #756157;
   border-radius: 4px;
   text-transform: uppercase;
@@ -421,7 +426,7 @@ body {
 }
 
 .advantages-title-icons-bottom {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -489,7 +494,9 @@ body {
 }
 
 .search-button-name {
-  font-family: 'PT Sans';
+  display: block; 
+  text-align: center;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -515,6 +522,16 @@ body {
   margin: 0;
 }
 
+.subscription-form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
 .subscription-title {
   font-family: "PT Sans";
   font-style: normal;
@@ -538,6 +555,7 @@ body {
 }
 
 .button-subscription {
+  display: block;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -546,21 +564,30 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 46px;
-  margin-bottom: 94px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .page-footer-container {
   display: flex;
   width: 1200px;
   height: 120px;
-  margin: 0 auto;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .footer-socials {
   max-width: 142px;
   align-items: center;
-  padding: 0px;
+  margin-bottom: 35px;
+  padding: 12px;
+  margin-right: 236px;
 }
 
 .footer-socials-list {
@@ -577,11 +604,11 @@ body {
 }
 
 .footer-socials-item-telegram {
-  margin-left: 27px;
+  margin-left: 26px;
 }
 
 .footer-socials-item-youtube {
-  margin-left: 27px;
+  margin-left: 26px;
 }
 
 .footer-phone-number {
@@ -592,21 +619,20 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  margin-left: 250px;
+  margin-right: 235px;
 }
 
 .footer-phone {
   text-align: center;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
   max-width: 331px;
 }
 
 .footer-company {
   margin-top: 49px;
-  margin-bottom: auto;
-  margin-right: 70px;
-  margin-left: 0 auto;
+  margin-bottom: 38px;
+  padding: 0;
+  margin-left: auto;
   max-width: 115px;
 }
   /* CSS Каталога */
@@ -628,8 +654,10 @@ body {
 
   .catalog-products {
     display: flex;
-    text-align: center;
     flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 96px;
   }
 
   .inner-header-title {
@@ -662,6 +690,8 @@ body {
     width: 151px;
     margin-left: 70px;
     border: none;
+    margin-left: 70px;
+    padding: 0;
   }
 
   .hotel-filter-list {
@@ -685,15 +715,14 @@ body {
   .product-list-Amara {
     width: 340px;
     height: 438px;
-    margin-left: 0 auto;
-    margin-right: 18px;
+    margin-left: 0;
+    margin-top: auto;
     list-style-type: none;
   }
 
   .product-list-Villas {
     width: 340px;
     height: 438px;
-    margin-left: 0;
     list-style-type: none;
   }
 
@@ -707,8 +736,55 @@ body {
     width: 340px;
     height: 438px;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: auto;
     list-style-type: none;
+  }
+
+  .stars {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .star-first {
+    display: block;
+    width: 18px;
+    height: 17px;
+    margin-right: 6px;
+    background-image: url("../images/star.svg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .star-second {
+    display: block;
+    width: 18px;
+    height: 17px;
+    margin-right: 6px;
+    background-image: url("../images/star.svg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .star-third {
+    display: block;
+    width: 18px;
+    height: 17px;
+    margin-right: 6px;
+    background-image: url("../images/star.svg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .star-fourth {
+    display: block;
+    width: 18px;
+    height: 17px;
+    margin-right: 0;
+    background-image: url("../images/star.svg");
+    background-position: center;
+    background-size: cover;
   }
 
   .main-inner {
@@ -767,6 +843,10 @@ body {
     border: none;
   }
 
+  .inner-header-price-field-button {
+    border: none;
+  }
+
   .hotels-found-title {
     font-family: "PT Sans";
     font-style: normal;
@@ -775,9 +855,53 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
-    margin-top: 58px;
+    margin-top: 57px;
     margin-left: 72px;
-    margin-bottom: 80px;
+  }
+
+  .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+    margin-right: 18px;
+    margin-left: 73px;
+  }
+
+  .product-card-button-favorite {
+    display: block;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #82B3D3;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    width: 140px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+
+
+  .product-card-button-favorite-basket {
+    display: block;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #7DB54F;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    width: 140px;
+    padding-top: 9px;
+    padding-bottom: 8px;
   }
 
   .product-card-title {
@@ -797,6 +921,8 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    margin-right: 113px;
+    margin-bottom: 16px;
   }
 
   .product-card-price {
@@ -805,23 +931,49 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    margin-right: 20px;
   }
 
-.product-card-button {
+.product-card-ranking {
+  display: block;
+  background: #F2F2F2;
+  border-radius: 4px; 
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  width: 140px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
+.product-card-button-more {
+  display: block;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  background: #82B3D3;
+  background: #756157;
   text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-right: 20px;
+  width: 140px;
+  padding-top: 9px;
+  padding-bottom: 8px;
 }
 
 /* Pagination */
 .pagination {
   display: flex;
-  margin: 0;
+  margin-left: 73px;
   padding: 0;
   list-style-type: none;
 }
