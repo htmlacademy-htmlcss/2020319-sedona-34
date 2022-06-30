@@ -117,14 +117,12 @@ body {
 }
 
 .navigation-item-about {
-  margin-left: 0 auto;
   margin-top: 20px;
   margin-bottom: 19px;
   margin-right: 34px;
 }
 
 .navigation-item-hotels {
-  margin-left: 0 auto;
   margin-top: 20px;
   margin-bottom: 19px;
   margin-right: auto;
@@ -158,6 +156,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  background-color: #FFFFFF;
 }
 
 .page-container {
@@ -195,6 +194,7 @@ body {
 .main-content-description {
   text-transform: uppercase;
   margin-top: 63px;
+  margin-bottom: 31px;
 }
 
 .five-reasons {
@@ -204,7 +204,6 @@ body {
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 90px;
-  margin-top: 31px;
 }
 
 /* List */
@@ -229,6 +228,7 @@ body {
 
 /* Title */
 .advantages-title {
+  display: flex;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -561,12 +561,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   width: 200px;
   background: #82B3D3;
   border-radius: 0px 10px 10px 0px;
@@ -611,7 +607,7 @@ body {
 
   .page-header {
     color:#000000;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
   
   .navigation-link {
@@ -630,11 +626,12 @@ body {
     list-style-type: none;
     padding: 0;
     width: 1056px;
-    margin: 0 auto 96px;
+    margin: 0 auto;
+    /* margin: 0 auto 96px; */
   }
 
   .inner-header-title {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -655,6 +652,14 @@ body {
     margin-right: 0;
     margin-bottom: 47px;
   }
+
+  .hotels {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 18px;
+  }
+
   .hotels-filter {
    display: flex; 
   }
@@ -663,7 +668,6 @@ body {
     width: 151px;
     margin-left: 70px;
     border: none;
-    margin-left: 70px;
     padding: 0;
   }
 
@@ -685,34 +689,10 @@ body {
     margin-bottom: 70px;
   }
 
-  .product-list-Amara {
-    width: 340px;
-    height: 438px;
-    margin-top: auto;
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .product-list-Villas {
-    width: 340px;
-    height: 438px;
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .product-list-Desert {
-    width: 340px;
-    height: 438px;
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .product-list-GreenTree {
-    width: 340px;
-    height: 438px;
-    margin-top: auto;
-    list-style-type: none;
-    padding-left: 0;
+  .stars-ranking {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .stars {
@@ -721,8 +701,9 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 140px;
-    margin-top: 26px;
-    padding: 0;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 20px;
   }
 
   .star {
@@ -814,7 +795,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 340px;    
-    margin-left: 73px;
+  }
+
+  .product-card-image {
+    padding: 20px;
+    margin: 0;
   }
 
   .product-card-button-favorite {
@@ -859,7 +844,9 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    margin: 0;
   }
 
   .product-card-link {
@@ -872,10 +859,11 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    margin-right: 20px;
-    margin-bottom: 16px;
-    margin-top: 0;
     width: 140px;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #333333;
   }
 
   .product-card-price {
@@ -886,6 +874,7 @@ body {
     line-height: 21px;
     margin-right: 20px;
     margin-top: 0;
+    color: #333333;
   }
 
 .product-card-ranking {
@@ -901,8 +890,7 @@ body {
   text-transform: uppercase;
   color: #333333;
   width: 140px;
-  margin-right: 0;
-  margin-top: 16px;
+  margin: 16px 20px 20px 20px;
   padding-top: 9px;
   padding-bottom: 8px;
 }
@@ -921,6 +909,7 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   margin-right: 20px;
+  margin-left: 20px;
   width: 140px;
   padding-top: 9px;
   padding-bottom: 8px;
@@ -967,7 +956,7 @@ body {
   padding: 12px 24px;
   line-height: 36px;
   font-weight: 700;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
 }
