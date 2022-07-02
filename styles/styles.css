@@ -67,38 +67,29 @@ body {
 
 .navigation {
   display: flex;
+  position: relative;
   width: 1200px;
-}
-
-.navigation-list {
-  display: flex;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  flex-wrap: wrap;
-}
-
-.navigation-user {
-  max-width: 270px;
-  margin-left: auto;
-}
-
-.navigation-list .navigation-user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  min-width: 42px;
-  min-height: 66px;
 }
 
 .navigation-item-search {
-  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+}
+
+.navigation-item-favorite {
+  width: 42px;
+}
+
+.navigation-logo {
+  position: absolute;
+  top: 0;
+  left: 70px;
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   font-family: "PT Sans";
   line-height: 26px;
@@ -107,6 +98,26 @@ body {
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: capitalize; 
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  margin-left: 181px;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.navigation-user {
+  margin-left: auto;
+}
+
+.navigation-list .navigation-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .navigation-item-main {
@@ -131,9 +142,9 @@ body {
 .navigation-item-button {
   background: #756157;
   border-radius: 4px;
-  margin-left: 18px;
+  margin-left: 19px;
+  margin-right: 70px;
   margin-top: 14px;
-  margin-right: auto;
   width: 160px;
   height: 37px;
 }
@@ -169,18 +180,28 @@ body {
   width: 139px;
   height: 70px;
   margin-left: 70px;
-  margin-right: 47px;
 }
 
 .main-index {
+  position: relative;
   color: #000000;
   background-color: #FFFFFF;
   background-image: url("../images/background/indexBackground.jpg");
-  height: 485px;
   width: 1200px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.welcome::after {
+  position: relative;
+  bottom: -17px;   
+  left: 0;
+  width: 1200px;
+  content: url("../images/divider.png");
+  height: 57px;
+  background-repeat:no-repeat;
+  background-size: contain;
 }
 
 .welcome-description {
@@ -193,8 +214,8 @@ body {
 
 .main-content-description {
   text-transform: uppercase;
-  margin-top: 63px;
   margin-bottom: 31px;
+  padding-top: 64px;
 }
 
 .five-reasons {
@@ -286,8 +307,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  height: 384px;
   width: 400px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   margin: 0;
   background:rgba(131, 179, 211, 0.12);
 }
@@ -298,8 +320,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  height: 384px;
   width: 400px;
+  padding-top: 81px;
+  padding-bottom: 81px;
   margin: 0;
   background: #FFFFFF;
 }
@@ -310,8 +333,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  height: 384px;
   width: 400px;
+  padding-top: 78px;
+  padding-bottom: 78px;
   margin: 0;
   background: #FFFFFF;
   background: rgba(131, 179, 211, 0.12);
@@ -389,7 +413,6 @@ body {
 .advantages-icon-souvenirs {
   width: 64px;
   height: 76px;
-  margin-top: 78px;
 }
 
 .advantages-photo-bridge {
@@ -524,12 +547,12 @@ body {
 
 .subscription-form {
   display: flex;
-  align-items: center;
   flex-direction: row;
   justify-content: center;
-  width: 600px;
   margin: 0 auto;
   margin-top: 46px;
+  width: 600px;
+  height: 60px;
 }
 
 .subscription-title {
@@ -565,7 +588,6 @@ body {
   color: #FFFFFF;
   width: 200px;
   background: #82B3D3;
-  border-radius: 0px 10px 10px 0px;
 }
 
 .page-footer {
@@ -581,6 +603,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .footer-socials-item-telegram {
@@ -649,8 +672,10 @@ body {
 
   .breadcrumbs-item {
     margin-left: 76px;
+    margin-top: 15px;
     margin-right: 0;
     margin-bottom: 47px;
+    fill:#FFFFFF;
   }
 
   .hotels {
@@ -722,7 +747,6 @@ body {
   .main-inner {
     padding-top: 35px;
     color: #FFFFFF;
-    background-color: #000000;
     background-image: url("../images/background/catalogBackground.jpg");
     width: 1200px;
     background-size: 100% auto;
