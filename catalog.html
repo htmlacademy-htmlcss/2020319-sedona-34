@@ -83,7 +83,7 @@
                           <label class="control">
                             <input class="visually-hidden control-input" type="checkbox" name="swmming-pool" checked>
                               <span class="control-mark"></span>
-                              <span class="control-label">Бассейн.</span>
+                              <span class="control-label">Бассейн</span>
                           </label>
                         </li>
                         <li class="hotel-filter-item">
@@ -91,14 +91,14 @@
                             <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                               <span class="control-mark">
                               </span>
-                              <span class="control-label">Парковка.</span>
+                              <span class="control-label">Парковка</span>
                           </label>
                         </li>
                         <li class="hotel-filter-item-wifi">
                           <label class="control">
                             <input class="visually-hidden control-input" type="checkbox" name="wifi">
                               <span class="control-mark"></span>
-                              <span class="control-label">Wi-Fi.</span>
+                              <span class="control-label">Wi-Fi</span>
                           </label>  
                         </li>
                       </ul>
@@ -111,7 +111,7 @@
                           <label class="control">
                             <input class="visually-hidden control-input" type="radio" name="product-group" checked>
                               <span class="control-mark"></span>
-                              <span class="control-label">Гостиница.</span>
+                              <span class="control-label">Гостиница</span>
                           </label>
                         </li>
                         <li class="hotel-filter-item">
@@ -131,35 +131,31 @@
                       </ul>
                   </fieldset>
 
-                  <fieldset class="inner-header-price-field">
-                    <legend class="inner-header-price-title">Стоимость, ₽:</legend>
-
+                  <fieldset class="filter-group filter-group-price">
+                    <legend class="filter-title-price">Стоимость, ₽:</legend>
+                    <div class="wrap-input">
+                      <label class="filter-group-label" aria-label="Минимальная цена">
+                        <input class="min-max-price min-price"  type="text" id="min-price" name="min-price" placeholder="0"/>
+                        <span class="price">от</span>
+                      </label>
+                      <label class="filter-group-label" aria-label="Максимальная цена">
+                        <input class="min-max-price max-price" type="text" id="max-price" name="max-price" placeholder="9000"/>
+                        <span class="price">до</span>
+                      </label>
+                    </div>
                     <div class="range">
-                      <div class="range-wrapper-inputs">
-                        <label class="catalog-filter-label">
-                          <input class="range-input" type="number" placeholder="0" name="min-price" min="0">
-                          <span class="catalog-filter-label-text">от</span>
-                        </label>
-                        <label class="catalog-filter-label">
-                          <input class="range-input" type="number" placeholder="9000" name="max-price" max="9000">
-                          <span class="catalog-filter-label-text">до</span>
-                        </label>
-                        <div class="range-scale">
-                          <div class="range-bar" style="width: 228px">
-                            <button class="range-toggle toggle-min" type="button">
-                              <span class="visually-hidden">Изменить минимальную цену.</span>
-                            </button>
-                            <button class="range-toggle toggle-max" type="button">
-                              <span class="visually-hidden">Изменить максимальную цену.</span>
-                            </button>
-                          </div>
+                      <div class="range-scale">
+                        <div class="range-bar" style="width: 228px; left: 0">
+                          <button type="button" class="range-toggle toggle-min" aria-label="Выставить минимальную цену"></button>
+                          <button  type="button" class="range-toggle toggle-max" aria-label="Выставить максимальную цену"></button>
                         </div>
                       </div>
                     </div>
                   </fieldset>
+                  
                   <div class="inner-header-buttons">
-                    <button class="button button-applyn" type="submit">Применить</button>
-                    <button class="button button-reset" type="reset">Сбросить</button>
+                    <button class="button apply-button" type="submit">Применить</button>
+                    <button class="button reset-button" type="reset">Сбросить</button>
                   </div>                  
               </form>
             
