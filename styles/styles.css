@@ -974,6 +974,21 @@ body {
     margin-left: 70px;
   }
 
+  .reset-button:hover {
+    color: #FFFFFF;
+    opacity: 0.6;
+  }
+
+  .reset-button:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  }
+
+  .reset-button:active {
+    color: #FFFFFF;
+    opacity: 0.3;
+  }
+
   .inner-header-price-field {
     width: 518px;
     margin-left: 221px;
@@ -1071,6 +1086,21 @@ body {
     height: 20px;
     background-color: #FFFFFF;
     border-radius: 4px;    
+  }
+
+  .control-mark:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+  }
+
+  .control-mark:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  }
+
+  .control-mark:active {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
   }
 
   .control-label {
@@ -1611,14 +1641,10 @@ pagination-item:last-child {
   background: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container.is-open {
-  display: grid;
-}
-
 .modal {
   position: relative;
   margin: auto;
-  padding: 63px 69px 88px 76px;
+  padding: 62px 70px 70px 70px;
   background-color: #FFFFFF;
   border-radius: 30px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
@@ -1673,46 +1699,36 @@ pagination-item:last-child {
   position: relative;
 }
 
-.field-group.is-valid .successful-message {
-  display: block;
-}
-
-.field-group.is-invalid .error-message {
-  display: block;
-}
-
 .label-field-input {
   font-weight: 700;
   font-size: 20px;
   align-self: center;
 }
 
-.label-children {
-  margin-right:
-}
-
 .field-group-modal {
   background: #F2F2F2;
-  width: 420px;
   border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
   border: none;
   padding: 14px 18px;
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
+  color: #000000;
 }
 
-.field-modal:hover {
+.field-group-modal:hover {
   background-color: #E6E6E6;
 }
 
-.field-modal:focus {
+.field-group-modal:focus {
   box-shadow: 0 0 0 3px #81B3D2;
   outline: #81b3d2;
   background-color: #FFFFFF;
 }
 
-.field-modal:focus:not(:placeholder-shown) {
+.field--group-modal:focus:not(:placeholder-shown) {
   box-shadow: 0 0 0 3px #000000;
 }
 
@@ -1760,7 +1776,7 @@ pagination-item:last-child {
 
 .quantity-block {
   display: grid;
-  grid-template-columns: 289px 229px;
+  grid-template-columns: 288px 230px;
   gap: 0 56px;
   align-items: start;
   margin-bottom: 40px;
@@ -1768,6 +1784,7 @@ pagination-item:last-child {
 
 .quantity-group {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -1861,11 +1878,26 @@ pagination-item:last-child {
   cursor: pointer;
 }
 
+.find-button:hover {
+  background: #68A2CA;
+  border-radius: 10px;
+}
+
 .find-button:focus {
-  box-shadow: 0 0 0 3px #756257;
+  background: #68A2CA;
+  border: 3px solid #756257;
+  border-radius: 10px;
+}
+
+.find-button:active {
+  background: #68A2CA;
+  border-radius: 10px;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .tooltip-toggle {
+  display: block;
   border: none;
   margin: 2px 0 0 1px;
   width: 25px;
@@ -1891,7 +1923,7 @@ pagination-item:last-child {
   z-index: 1;
   margin-top: 16px;
   display: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15); 
 }
 
 .tooltip-text::before {

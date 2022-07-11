@@ -217,7 +217,7 @@
                     <label class="label-field-input" for="arrival-date">Дата Заезда</label>
                     <div class="field-date-calendar">
                       <input class="arrival-date field-group-modal" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020" required/>
-                      <button class="date-button arrival-date" type="button" aria-label="Выбрать дату заезда"></button>
+                      <button class="date-button arrival-date-button" type="button" aria-label="Выбрать дату заезда"></button>
                       <span class="incorrect-information">Мы не можем отправить вас в прошлое.</span>
                       <!-- <span class="correct-information">На эти даты есть свободные номера. Пока есть.</span> -->
                     </div>
@@ -227,21 +227,21 @@
                     <label class="label-field-input" for="departure-date">Дата Выезда:</label>
                     <div class="field-date-calendar">
                       <input class="departure-date field-group-modal"type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021" required/>
-                      <button class="date-button departure-date" type="button" aria-label="Выбрать дату выезда"></button>
+                      <button class="date-button departure-date-button" type="button" aria-label="Выбрать дату выезда"></button>
                       <!-- <span class="incorrect-information">Мы не можем отправить вас в прошлое.</span> -->
                       <span class="correct-information">На эти даты есть свободные номера. Пока есть.</span>
                     </div>
                   </div>
                   <div class="quantity-block">
                     <div class="quantity-group">
-                      <label class="label-field-input" for="adults">Взросле:</label>
+                      <label class="label-field-input" for="adults">Взрослые:</label>
                       <div class="button-control">
                         <input class="visitors-field field-group-modal" type="text" id="adult" name="adults" placeholder="2" maxlength="1" required/>
                         <button class="quantity-button plus-button" type="button" aria-label="Добавить кол-во взрослых"></button>
                         <button class="quantity-button minus-button" type="button" aria-label="Уменшить кол-во взрослых"></button>
                       </div>
                     </div>
-                    <div clas="control-group">
+                    <div class="quantity-group">
                       <span class="label-field-input">
                         <label class="label-field-input" for="children">Дети:</label>
                         <span class="tooltip">
