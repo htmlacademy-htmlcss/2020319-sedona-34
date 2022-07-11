@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Седона, город, туризм, отели">
+    <meta name="description"
+      content="Официальный сайт города Седона. Здесь Вы можете найти всю информацию о нашем городе и о наличии свободных мест в гостиницах.">
+
     <base href="https://htmlacademy-htmlcss.github.io/2020319-sedona-34/7/">
 </head>
 
@@ -34,7 +39,7 @@
                   <path d="m18.16 17.05-3.71-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8.02-8a8.12 8.12 0 0 0-8.02 8.1c0 4.4 3.6 8 8.02 8 1.8 0 3.51-.6 4.91-1.7l3.71 3.7 1.4-1.5Zm-10.03-2.5c-3.3 0-6.02-2.7-6.02-6a6.03 6.03 0 0 1 12.04 0c0 3.3-2.71 6-6.02 6Z" fill="#000"/>
                 </svg>                
                 <span class="visually-hidden">
-                  Поиск
+                  Поиск.
                 </span>
               </a>
             </li>
@@ -44,7 +49,7 @@
                   <path d="M20.58 41c-.3 0-.6-.1-.8-.4-5.42-6.1-6.72-7.5-7.03-7.9a5.4 5.4 0 0 1 4.41-8.7c1.31 0 2.51.5 3.52 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.31 3.4l-7.02 7.9c-.2.2-.4.3-.8.3Zm-6.02-9.5c.3.4 3.51 4 6.12 6.9l6.21-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.71 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.71-1.3-2.71-1.3-1.8 0-3.31 1.5-3.31 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/><rect x="24.13" y="15" width="20" height="20" rx="10" fill="#7DB54F"/><path d="M30.26 26.76h1.4v-4.84l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37v.74h-3.55v-.74Zm7.83-4.67c0 .35-.06.72-.2 1.09-.12.37-.3.74-.5 1.11-.21.37-.45.74-.7 1.1l-.79 1.01-.49.43v.04l.64-.11h2.18v.74h-3.98v-.29a32.75 32.75 0 0 0 1.17-1.32 15.09 15.09 0 0 0 1.25-1.83c.18-.32.33-.64.43-.95.11-.31.16-.61.16-.89 0-.33-.09-.6-.28-.81-.18-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.44.22-.62.35l-.33-.57c.24-.2.51-.36.83-.47.32-.11.67-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z" fill="#fff"/>
                 </svg>                
                 <span class="visually-hidden">   
-                    Избранное
+                    Избранное.
                 </span>
               </a>
             </li>
@@ -54,6 +59,7 @@
           </ul>
         </nav>
       </header>
+
     <main class="main-container main-index">
       <section class="welcome">
           <h1 class="visually-hidden">HTML Academy: Седона</h1>
@@ -149,7 +155,7 @@
           <p class="subscription-description">Только полезная информация и никакого спама,</p>
           <p class="subscription-description">честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" id="subscription-email" name="email" placeholder="Ваш e-mail">
+            <input class="field" type="email" id="subscription-email" name="email" placeholder="Ваш e-mail">
             <button class="button-subscription" type="submit">Подписаться</button>
           </form>
       </section>
@@ -197,6 +203,76 @@
           </span>
           </a>
     </footer>
+      </div>
+
+      <!-- Для того чтобы закрыть модальное окно, добавляем .modal-container-close -->
+
+          <div class="modal-container">
+            <div class="modal">
+              <button class="modal-close-button" aria-label="Закрыть"></button>
+              <section class="modal-content">
+                <h2 class="modal-content-title">Поиск гостиниц в Седоне</h2>
+                <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+                  <div class="field-group">
+                    <label class="label-field-input" for="arrival-date">Дата Заезда</label>
+                    <div class="field-date-calendar">
+                      <input class="arrival-date field-group-modal" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020" required/>
+                      <button class="date-button arrival-date-button" type="button" aria-label="Выбрать дату заезда"></button>
+                      <span class="incorrect-information">Мы не можем отправить вас в прошлое.</span>
+                      <!-- <span class="correct-information">На эти даты есть свободные номера. Пока есть.</span> -->
+                    </div>
+                  </div>
+
+                  <div class="field-group">
+                    <label class="label-field-input" for="departure-date">Дата Выезда:</label>
+                    <div class="field-date-calendar">
+                      <input class="departure-date field-group-modal"type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021" required/>
+                      <button class="date-button departure-date-button" type="button" aria-label="Выбрать дату выезда"></button>
+                      <!-- <span class="incorrect-information">Мы не можем отправить вас в прошлое.</span> -->
+                      <span class="correct-information">На эти даты есть свободные номера. Пока есть.</span>
+                    </div>
+                  </div>
+                  <div class="quantity-block">
+                    <div class="quantity-group">
+                      <label class="label-field-input" for="adults">Взрослые:</label>
+                      <div class="button-control">
+                        <input class="visitors-field field-group-modal" type="text" id="adult" name="adults" placeholder="2" maxlength="1" required/>
+                        <button class="quantity-button plus-button" type="button" aria-label="Добавить кол-во взрослых"></button>
+                        <button class="quantity-button minus-button" type="button" aria-label="Уменшить кол-во взрослых"></button>
+                      </div>
+                    </div>
+                    <div class="quantity-group">
+                      <span class="label-field-input">
+                        <label class="label-field-input" for="children">Дети:</label>
+                        <span class="tooltip">
+                          <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                            <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_33716_651)">
+                              <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                              <path d="M1 0H0V1H1V0Z" fill="white"/>
+                              </g>
+                            </svg>
+                          </button>
+                          <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст
+                            которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                        </span> 
+                      </span>
+                      <div class="button-control">
+                        <input class="visitors-field field-group-modal" type="text" id="child" name="child" placeholder="1" maxlength="1"/>
+                        <button class="quantity-button plus-button" type="button" aria-label="Добавить кол-во детей"></button>
+                        <button class="quantity-button minus-button" type="button" aria-label="Уменшить кол-во детей"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="find-button" type="submit">Найти</button>
+                </form>
+              </section>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
       </div>
   </body>
 </html>
