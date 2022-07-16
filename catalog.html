@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png"/>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -56,7 +58,8 @@
       </header>
 
         <main class="main-container main-inner">
-          <div class="inner-header">
+          <div clas="main-container-catalog">
+            <div class="inner-header">
               <h1 class="inner-header-title">Гостиницы Седоны</h1> 
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item-main">
@@ -73,8 +76,8 @@
                   <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
                 </li>
               </ul>
-          </div> 
-              <form form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
+            </div> 
+              <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <h2 class="visually-hidden">Фильтры гостиниц</h2>
                   <fieldset class="hotel-filter-group">
                     <legend class="hotel-filter-title">Инфраструктура:</legend>
@@ -158,7 +161,8 @@
                     <button class="button reset-button" type="reset">Сбросить</button>
                   </div>                  
               </form>
-            
+            </div>
+
             <section class="main-container">
               <div class="main-catalog">
                 <div class="sorting-container">
@@ -174,8 +178,8 @@
 
                   </div>
                     <div class="sorting-buttons">
-                      <a href="#" class="sorting-button-icon sorting-icon-table" type="button">
-                        <svg class="sorting-view-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <a href="#" class="sorting-button-icon sorting-icon-table">
+                        <svg class="sorting-view-icon" width="14" height="13" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M4 0H0V6H4V0Z" fill="black"/>
                           <path d="M16 0H12V6H16V0Z" fill="black"/>
                           <path d="M10 0H6V6H10V0Z" fill="black"/>
@@ -185,14 +189,14 @@
                         </svg>                          
                         <span class="visually-hidden">Показать карточки.</span>
                       </a>
-                      <a href="#" class="sorting-button-icon" type="button">
+                      <a href="#" class="sorting-button-icon">
                         <svg class="sorting-view-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 12H0V14H16V12Z" fill="black"/>
                           <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
                         </svg>                          
                         <span class="visually-hidden">Галерея.</span>
                       </a>
-                      <a href="#" class="sorting-button-icon" type="button">
+                      <a href="#" class="sorting-button-icon">
                         <svg class="sorting-view-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M2 0H0V2H2V0Z" fill="black"/>
                           <path d="M16 0H4V2H16V0Z" fill="black"/>
@@ -213,7 +217,7 @@
                 <ul class="hotels">
                   <li class="product-card">
                     <a class="product-card-link" href="#">
-                      <img class="product-card-image" src="images/hotels/hotel1.jpg" alt="Amara Resort & Spa.">
+                      <img class="product-card-image" src="images/hotels/hotel1.jpg" alt="Amara Resort & Spa." heigh="211px" width="300px">
                       <h3 class="product-card-title">Amara Resort & Spa</h3>
                     </a>
                     <p class="product-card-type">Гостиница</p>
@@ -232,7 +236,7 @@
                   </li>
                   <li class="product-card">
                     <a class="product-card-link" href="#">
-                      <img class="product-card-image" src="images/hotels/hotel2.jpg" alt="Villas at Poco Diablo.">
+                      <img class="product-card-image" src="images/hotels/hotel2.jpg" alt="Villas at Poco Diablo." heigh="211px" width="300px">
                       <h3 class="product-card-title">Villas at Poco Diablo</h3>
                     </a>
                       <p class="product-card-type">Гостиница</p>
@@ -249,7 +253,7 @@
                   </li>
                   <li class="product-card">
                     <a class="product-card-link" href="#">
-                      <img class="product-card-image" src="images/hotels/hotel3.jpg" alt="Desert Quail Inn.">
+                      <img class="product-card-image" src="images/hotels/hotel3.jpg" alt="Desert Quail Inn." heigh="211px" width="300px">
                       <h3 class="product-card-title">Desert Quail Inn</h3>
                     </a>
                       <p class="product-card-type">Гостиница</p>
@@ -265,7 +269,7 @@
                   </li>
                   <li class="product-card">
                     <a class="product-card-link" href="#">
-                      <img class="product-card-image" src="images/hotels/hotel4.jpg" alt="GreenTree Inn.">
+                      <img class="product-card-image" src="images/hotels/hotel4.jpg" alt="GreenTree Inn." heigh="211px" width="300px">
                       <h3 class="product-card-title">GreenTree Inn</h3>
                     </a>
                       <p class="product-card-type">Гостиница</p>
@@ -282,6 +286,7 @@
               </div>
               </div>
             </section>
+            
           <!-- Пагинация -->
             <div class="pagination-container">
               <ul class="pagination">
