@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png"/>
     <link rel="stylesheet" href="styles/styles.css">
-    <meta charset="UTF-8">
-    <meta name="keywords" content="Седона, город, туризм, отели">
-    <meta name="description"
-      content="Официальный сайт города Седона. Здесь Вы можете найти всю информацию о нашем городе и о наличии свободных мест в гостиницах.">
   </head>
 
   <body>
@@ -70,7 +68,7 @@
             <h3 class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</h3>
           <ul class="advantages-list">
             <li class="advantages-item-town">
-              <h3 class="advantages-title">Настоящий городок</h3>
+              <h3 class="advantages-title">Настоящий<br>городок</h3>
               <p class="advantages-number-town">— №1 —</p>
               <p class="advantages-text-town">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
@@ -124,19 +122,19 @@
               <h3 class="advantages-title-icons-bottom">Небольшая<br>площадь</h3>
               <p class="advantages-description-icons-number">— №3 —</p>
               <p class="advantages-description-icons">Все достопримечательности</p>
-              <p class="advantages-description-icons">находятся очень близко</p>
+              <p class="advantages-description-icons icons-last">находятся очень близко</p>
             </li>
             <li class="advantages-item-road">
               <h3 class="advantages-title-icons-bottom">Красивая<br>дорога</h3>
               <p class="advantages-description-icons-number">— №4 —</p>
               <p class="advantages-description-icons">Ехать в Седону из Лас-Вегаса</p>
-              <p class="advantages-description-icons">совсем не скучно!</p>
+              <p class="advantages-description-icons icons-last">совсем не скучно!</p>
             </li>
             <li class="advantages-item-tourists">
               <h3 class="advantages-title-icons-bottom">Мало<br>туристов</h3>
               <p class="advantages-description-icons-number">— №5 —</p>
               <p class="advantages-description-icons">Большинство едет в Гранд</p>
-              <p class="advantages-description-icons">Каньон и толпится там</p>
+              <p class="advantages-description-icons icons-last">Каньон и толпится там</p>
             </li>
           </ul>
       </section>
@@ -157,6 +155,7 @@
             <button class="button-subscription" type="submit">Подписаться</button>
           </form>
       </section>
+      </div>
     </main>
     <footer class="page-footer">
       <ul class="footer-socials-list">
@@ -172,7 +171,7 @@
         </li>
         <li class="footer-socials-item-telegram">
           <a class="button-socials" href="#">
-            <svg class="socials-icon" width="18" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="socials-icon" width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.79.6.84 6.75c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18l-7.68 6.92-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8C18.22.77 17.5.27 16.79.59Z" fill="#83B3D3"/>
             </svg>
             <span class="visually-hidden">
@@ -207,7 +206,7 @@
 
           <div class="modal-container modal-container-close">
             <div class="modal">
-              <button class="modal-close-button" aria-label="Закрыть"></button>
+              <button class="modal-close-button" aria-label="Закрыть" type="button"></button>
               <section class="modal-content">
                 <h2 class="modal-content-title">Поиск гостиниц в Седоне</h2>
                 <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -225,7 +224,7 @@
                   <div class="field-group">
                     <label class="label-field-input" for="departure-date">Дата Выезда:</label>
                     <div class="field-date-calendar">
-                      <input class="departure-date field-group-modal"type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021" required/>
+                      <input class="departure-date field-group-modal" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021" required/>
                       <button class="date-button departure-date-button" type="button" aria-label="Выбрать дату выезда"></button>
                       <!-- <span class="incorrect-information">Мы не можем отправить вас в прошлое.</span> -->
                       <span class="correct-information">На эти даты есть свободные номера. Пока есть.</span>
@@ -234,6 +233,7 @@
                   <div class="quantity-block">
                     <div class="quantity-group">
                       <label class="label-field-input" for="adults">Взрослые:</label>
+                      <input class="visually-hidden" name="input-field" id="adults" type="text">
                       <div class="button-control">
                         <input class="visitors-field field-group-modal" type="text" id="adult" name="adults" placeholder="2" maxlength="1" required/>
                         <button class="quantity-button plus-button" type="button" aria-label="Добавить кол-во взрослых"></button>
@@ -243,9 +243,10 @@
                     <div class="quantity-group">
                       <span class="label-field-input">
                         <label class="label-field-input" for="children">Дети:</label>
+                        <input class="visually-hidden" name="input-field" id="children" type="text">
                         <span class="tooltip">
                           <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                            <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" xmlns="http://www.w3.org/2000/svg">
                               <g clip-path="url(#clip0_33716_651)">
                               <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
                               <path d="M1 0H0V1H1V0Z" fill="white"/>
@@ -268,9 +269,5 @@
               </section>
                 </div>
               </div>
-            </form>
-          </section>
-        </div>
-      </div>
   </body>
 </html>
